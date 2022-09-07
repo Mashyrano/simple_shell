@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *main - entry point 
+ *main - entry point
  *@ac: num of args
  *@av: array of args
  *@env: array of environment variable
@@ -8,7 +8,6 @@
  * Description: controls the flow of program
  * Return: 0 when successful only
  */
-  
 int main(__attribute__((unused))int ac, char **av, char **env)
 {
 	pid_t my_pid;
@@ -31,8 +30,8 @@ int main(__attribute__((unused))int ac, char **av, char **env)
 		/* tokenize */
 		tokenize(argv, buf_in);
 		/* check if argv[0] is exit */
-		if(check_built(argv[0], env, argv, buf_in))
-			continue;		
+		if (check_built(argv[0], env, argv, buf_in))
+			continue;
 		if (stat(argv[0], &st) != 0)
 		{
 			_print("%: 1: %: not found\n", av[0], argv[0]);

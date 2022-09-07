@@ -68,12 +68,13 @@ int _print(char *str, ...)
 		{
 			s = va_arg(vl, char *);
 			j = 0;
+
 			while (s[j] != '\0')
 			{
-					buf[nb] = s[j];
-					j++;
-					nb++;
-			}	
+				buf[nb] = s[j];
+				j++;
+				nb++;
+			}
 			i++;
 		}
 		else
@@ -107,6 +108,6 @@ int _strcmp(char *s1, char *s2)
 			return (0);
 		i++;
 	}
-	return (1);	
+	return (1);
 }
 

@@ -75,7 +75,7 @@ void free_space(char **argv, char *buf)
 
 	if (buf != NULL)
 		free(buf);
-	
+
 	if (argv == NULL)
 		return;
 

@@ -36,6 +36,7 @@ void my_env(char **environ)
  * @buf: getline buffer
  *
  *Description: check if avg equals any of built in functions
+ *Return: 1 if argv[0] is a built in
  */
 int check_built(char *avg, char **env, char **argv, char *buf)
 {
